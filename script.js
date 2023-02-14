@@ -30,11 +30,11 @@ const images = [
 
 // THEME COLORS 
 const colors = [
-    '#feb57b',
-    '#ffa901',
-    '#b5162e',
-    '#27223f',
-    '#468cc2',
+    '#8c7a84',
+    '#9c8d75',
+    '#1c1c1c',
+    '#473524',
+    '#28362b',
 ];
 
 function retrigAnim() {
