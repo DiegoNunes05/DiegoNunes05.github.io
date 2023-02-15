@@ -189,6 +189,10 @@
     align-items: center;
     animation: slide1;
   }
+
+  #construfor {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
   
   .decoration-right {
     bottom: 0;
@@ -363,6 +367,11 @@
     font-size: 1.8rem;
     margin-bottom: center;
     padding: 50px;
+
+    
+    box-shadow: 2px 0px 47px 17px rgba(230,230,230,0.67);
+    -webkit-box-shadow: 2px 0px 47px 17px rgba(230,230,230,0.67);
+    -moz-box-shadow: 2px 0px 47px 170px rgba(230,230,230,0.67);
   }
 
   #modal_close_projeto { 
