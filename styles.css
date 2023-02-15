@@ -364,16 +364,21 @@
     border-radius: 0.5em;
     box-shadow: 0 0 1em (0 0 0 / .3);
     width: 80%;
-    font-size: 1.8rem;
-    margin-bottom: center;
-    padding: 50px;
-
-    
-    box-shadow: 2px 0px 47px 17px rgba(230,230,230,0.67);
-    -webkit-box-shadow: 2px 0px 47px 17px rgba(230,230,230,0.67);
-    -moz-box-shadow: 2px 0px 47px 170px rgba(230,230,230,0.67);
+    font-size: 1rem;
+    margin: auto; /* Centralizar o diálogo */
+    padding: 5vw; /* Use vw para tornar o preenchimento responsivo */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
-
+  
+  @media (min-width: 768px) { /* Alterar para tamanho de tela maior do que 768 pixels */
+    dialog {
+      width: 50%; /* Reduzir o tamanho do diálogo em telas maiores */
+      font-size: 1.8em; /* Aumentar o tamanho da fonte em telas maiores */
+      padding: 40px; /* Usar valores fixos de preenchimento em telas maiores */
+    }
+  }
+  
+     
   #modal_close_projeto { 
     position: absolute;   
     right: 0.3rem;
@@ -389,11 +394,11 @@
 
   #projetos {
     margin: 0.1em 0;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 1px;
     transition: 0.3s;
     text-transform: uppercase;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
     
   }
 
@@ -412,11 +417,11 @@
 
   #Contato {
     margin: 0.1em 0;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 1px;
     transition: 0.3s;
     text-transform: uppercase;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
   }
 
   #modal_close_sobre {
@@ -434,12 +439,75 @@
 
   #sobre {
     margin: 0.1em 0;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 1px;
     transition: 0.3s;
     text-transform: uppercase;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
   }
 
+  .icon_contato {
+    display: flex;
+    justify-content: center;
+    margin: 3vw 0; /* Use vw para tornar as margens responsivas */
+    margin-bottom: -1.5vw; /* Use vw para tornar as margens responsivas */
+  }
   
- 
+  .icon_contato a {
+    color: #000;
+    font-size: 1.5vw; /* Use vw para tornar o tamanho da fonte responsivo */
+    margin: 0 2vw; /* Use vw para tornar as margens responsivas */
+    transition: color 0.3s;
+  }
+  
+  .icon_contato a:hover {
+    color: #3B5998;
+  }
+  
+  .email {
+    margin-top: 1.5vw; /* Use vw para tornar as margens responsivas */
+    margin-bottom: -2vw; /* Use vw para tornar as margens responsivas */
+  }
+  
+  @media (max-width: 768px) { /* Alterar para telas menores do que 768 pixels */
+    .icon_contato a {
+      font-size: 3vw; /* Reduzir o tamanho da fonte em telas menores */
+      margin: 0 1vw; /* Reduzir o espaçamento entre ícones em telas menores */
+    }
+    
+    .email {
+      margin-top: 1vw; /* Reduzir a margem superior em telas menores */
+      margin-bottom: -1.5vw; /* Reduzir a margem inferior em telas menores */
+    }
+  }
+  
+  .contato {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 2rem 0;
+  }
+  
+  .contato a {
+    display: inline-block;
+    margin: 1rem;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .contato a:hover {
+    transform: scale(1.2);
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .contato {
+      font-size: 1rem;
+    }
+    
+    .contato a {
+      margin: 0.5rem;
+    }
+  }
+  
+  p {
+    font-weight: 600;
+    color: #000;
+  }
