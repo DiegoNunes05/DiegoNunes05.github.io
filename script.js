@@ -21,11 +21,11 @@ let id = 0;
 
 // IMAGE PATHS
 const images = [
-    './image/construfor.png',
-    './image/gesso2.jpg',
-    './image/gesso3.jpg',
-    './image/gesso4.jpg',
-    './image/gesso5.jpg',
+    './imageshd/gessohd9.jpg',
+    './imageshd/gessohd6.jpg',
+    './imageshd/gessohd1.jpg',
+    './imageshd/gessohd3.jpg',
+    './imageshd/gessohd4.jpg',
 ];
 
 // THEME COLORS 
