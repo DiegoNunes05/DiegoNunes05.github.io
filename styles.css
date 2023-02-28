@@ -578,3 +578,25 @@
     font-size: 16px;
   }
   
+  .prev1, .next1 {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 30px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: rgba(184, 184, 184, 0.13);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .prev1 {
+    left: 10px;
+  }
+  .next1 {
+    right: 10px;
+  }
