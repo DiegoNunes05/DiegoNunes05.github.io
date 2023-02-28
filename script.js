@@ -8,7 +8,7 @@ menuBtn.addEventListener('click', () => {
 // SLIDER
 const pag = document.querySelectorAll('.pag');
 const prev = document.querySelector('.prev');
-const next = document.querySelector('.next');
+const next = document.querySelector('.next-slider');
 const img = document.querySelector('.slider-img');
 const overlay = document.querySelector('.overlay');
 const anim = document.querySelector('.anim');
@@ -73,12 +73,12 @@ prev.addEventListener('click', () => {
     stopAutoSlide();
 });
 
-next.addEventListener('click', () => {
-    nextSlide();
+nextSlider.addEventListener('click', () => {
+    nextSlideSlider();
     stopAutoSlide();
 });
 
-function nextSlide() {
+function nextSlideSlider() {
     id++;
     if (id > pag.length - 1) {
         id = 0;
@@ -86,10 +86,10 @@ function nextSlide() {
     slider(id);
 }
 
-let autoSlide = setInterval(nextSlide, 10000);
+let autoSlide = setInterval(nextSlideSlider, 10000);
 function stopAutoSlide() {
     clearInterval(autoSlide);
-    autoSlide = setInterval(nextSlide, 10000);
+    autoSlide = setInterval(nextSlideSlider, 10000);
 }
 
 
