@@ -74,7 +74,7 @@ prev.addEventListener('click', () => {
 });
 
 next.addEventListener('click', () => {
-    nextSlideSlider();
+    nextSlide();
     stopAutoSlide();
 });
 
