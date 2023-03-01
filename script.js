@@ -8,7 +8,7 @@ menuBtn.addEventListener('click', () => {
 // SLIDER
 const pag = document.querySelectorAll('.pag');
 const prev = document.querySelector('.prev');
-const next = document.querySelector('.next-slider');
+const next = document.querySelector('.next');
 const img = document.querySelector('.slider-img');
 const overlay = document.querySelector('.overlay');
 const anim = document.querySelector('.anim');
@@ -73,12 +73,12 @@ prev.addEventListener('click', () => {
     stopAutoSlide();
 });
 
-nextSlider.addEventListener('click', () => {
-    nextSlideSlider();
+next.addEventListener('click', () => {
+    nextSlide();
     stopAutoSlide();
 });
 
-function nextSlideSlider() {
+function nextSlide() {
     id++;
     if (id > pag.length - 1) {
         id = 0;
@@ -86,10 +86,10 @@ function nextSlideSlider() {
     slider(id);
 }
 
-let autoSlide = setInterval(nextSlideSlider, 10000);
+let autoSlide = setInterval(nextSlide, 10000);
 function stopAutoSlide() {
     clearInterval(autoSlide);
-    autoSlide = setInterval(nextSlideSlider, 10000);
+    autoSlide = setInterval(nextSlide, 10000);
 }
 
 
@@ -137,11 +137,11 @@ buttonCloseSobre.onclick = function () {
 var slideIndex = 1;
 showSlides(slideIndex);
 
-function prevSlide() {
+function prevSlide1() {
     showSlides(slideIndex -= 1);
 }
 
-function nextSlide() {
+function nextSlide1() {
     showSlides(slideIndex += 1);
 }
 
