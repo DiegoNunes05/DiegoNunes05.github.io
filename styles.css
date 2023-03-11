@@ -612,8 +612,7 @@
   
   .segunda-image {
     order: 1;
-    width: 55%; 
-    height: 300px;
+    width: 550px; 
   }
 
   @media (max-width: 767px) {
