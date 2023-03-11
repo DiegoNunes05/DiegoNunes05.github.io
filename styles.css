@@ -600,3 +600,24 @@
   .next1 {
     right: 10px;
   }
+
+  .conteudo h1 {
+    margin-top: 70px
+  }
+
+  .container-image {
+    display: flex;
+    align-items: center;
+  }
+  
+  .segunda-image {
+    order: 1;
+    width: 55%; 
+    height: 300px;
+  }
+
+  @media (max-width: 767px) {
+    .segunda-image {
+      display: none;
+    }
+  }
